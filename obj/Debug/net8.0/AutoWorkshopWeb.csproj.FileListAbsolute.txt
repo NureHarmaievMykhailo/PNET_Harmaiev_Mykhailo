@@ -134,3 +134,4 @@
 /Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/obj/Debug/net8.0/AutoWorkshopWeb.pdb
 /Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/obj/Debug/net8.0/AutoWorkshopWeb.genruntimeconfig.cache
 /Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/obj/Debug/net8.0/ref/AutoWorkshopWeb.dll
+/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/obj/Debug/net8.0/AutoWorkshopWeb.sourcelink.json

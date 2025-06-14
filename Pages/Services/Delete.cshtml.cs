@@ -2,16 +2,19 @@ using AutoWorkshopWeb.Data;
 using AutoWorkshopWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Logging;
 
 namespace AutoWorkshopWeb.Pages.Services;
 
 public class DeleteModel : PageModel
 {
     private readonly WorkshopContext _context;
+    private readonly ILogger<DeleteModel> _logger;
 
-    public DeleteModel(WorkshopContext context)
+    public DeleteModel(WorkshopContext context, ILogger<DeleteModel> logger)
     {
         _context = context;
+        _logger = logger;
     }
 
     [BindProperty]
@@ -20,33 +23,34 @@ public class DeleteModel : PageModel
     public async Task<IActionResult> OnGetAsync(int? id)
     {
         if (id == null)
-        {
             return NotFound();
-        }
 
         Service = await _context.Services.FindAsync(id);
 
-        if (Service == null)
-        {
-            return NotFound();
-        }
-
-        return Page();
+        return Service == null ? NotFound() : Page();
     }
 
     public async Task<IActionResult> OnPostAsync(int? id)
     {
         if (id == null)
-        {
             return NotFound();
-        }
 
         var service = await _context.Services.FindAsync(id);
 
         if (service != null)
         {
             _context.Services.Remove(service);
+
+            _context.ServiceLogs.Add(new ServiceLog
+            {
+                ServiceId = service.ServiceId,
+                OperationType = "Delete",
+                Message = $"Видалено послугу: {service.Name}"
+            });
+
             await _context.SaveChangesAsync();
+
+            _logger.LogWarning("Послугу видалено: {Name} (ID: {Id})", service.Name, service.ServiceId);
         }
 
         return RedirectToPage("Index");

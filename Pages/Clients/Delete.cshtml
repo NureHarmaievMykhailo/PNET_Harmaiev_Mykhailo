@@ -1,0 +1,12 @@
+@page "{id:int}"
+@model AutoWorkshopWeb.Pages.Clients.DeleteModel
+
+<h1>Підтвердження видалення</h1>
+
+<h4>Ви дійсно хочете видалити клієнта "@Model.Client?.FullName"?</h4>
+
+<form method="post">
+    <input type="hidden" asp-for="Client.ClientId" />
+    <button type="submit" class="btn btn-danger">Видалити</button>
+    <a asp-page="Index" class="btn btn-secondary">Скасувати</a>
+</form>

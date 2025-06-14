@@ -1,0 +1,21 @@
+@page "{id:int}"
+@model AutoWorkshopWeb.Pages.Clients.DetailsModel
+
+<h1>Інформація про клієнта</h1>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">Повне ім'я</dt>
+        <dd class="col-sm-10">@Model.Client?.FullName</dd>
+
+        <dt class="col-sm-2">Номер телефону</dt>
+        <dd class="col-sm-10">@Model.Client?.Phone</dd>
+
+        <dt class="col-sm-2">Пошта</dt>
+        <dd class="col-sm-10">@Model.Client?.Email</dd>
+        
+    </dl>
+</div>
+
+<a asp-page="Edit" asp-route-id="@Model.Client?.ClientId" class="btn btn-primary">Редагувати</a>
+<a asp-page="Index" class="btn btn-secondary">Назад</a>

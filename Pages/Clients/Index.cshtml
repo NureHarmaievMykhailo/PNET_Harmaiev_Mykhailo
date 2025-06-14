@@ -1,0 +1,34 @@
+@page
+@model AutoWorkshopWeb.Pages.Clients.IndexModel
+
+<h1>Клієнти</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Додати клієнта</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>ПІБ</th>
+        <th>Телефон</th>
+        <th>Email</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var client in Model.ClientList)
+    {
+        <tr>
+            <td>@client.FullName</td>
+            <td>@client.Phone</td>
+            <td>@client.Email</td>
+            <td>
+                <a asp-page="Edit" asp-route-id="@client.ClientId">Edit</a> |
+                <a asp-page="Details" asp-route-id="@client.ClientId">Details</a> |
+                <a asp-page="Delete" asp-route-id="@client.ClientId">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

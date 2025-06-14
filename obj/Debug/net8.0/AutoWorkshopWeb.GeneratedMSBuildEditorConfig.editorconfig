@@ -1,0 +1,127 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AutoWorkshopWeb
+build_property.RootNamespace = AutoWorkshopWeb
+build_property.ProjectDir = /Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Cars/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2Fycy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Cars/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2Fycy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Cars/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2Fycy9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Cars/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2Fycy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Cars/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2Fycy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Clients/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2xpZW50cy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Clients/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2xpZW50cy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Clients/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2xpZW50cy9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Clients/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2xpZW50cy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Clients/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2xpZW50cy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Orders/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXJzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Orders/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXJzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Orders/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXJzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Orders/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXJzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Orders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXJzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Services/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VydmljZXMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Services/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VydmljZXMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Services/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VydmljZXMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Services/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VydmljZXMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Services/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VydmljZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/evelinakibalkina/RiderProjects/AutoWorkshopWeb/AutoWorkshopWeb/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-zdu46yok2x

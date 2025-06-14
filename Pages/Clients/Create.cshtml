@@ -1,0 +1,31 @@
+@page
+@model AutoWorkshopWeb.Pages.Clients.CreateModel
+
+<h1>Додати клієнта</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Client.FullName"></label>
+        <input asp-for="Client.FullName" class="form-control" />
+        <span asp-validation-for="Client.FullName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Client.Phone"></label>
+        <input asp-for="Client.Phone" class="form-control" />
+        <span asp-validation-for="Client.Phone" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Client.Email"></label>
+        <input asp-for="Client.Email" class="form-control" />
+        <span asp-validation-for="Client.Email" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Зберегти</button>
+    <a asp-page="Index" class="btn btn-secondary mt-2">Назад</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

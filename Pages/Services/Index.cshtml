@@ -1,0 +1,36 @@
+@page
+@model AutoWorkshopWeb.Pages.Services.IndexModel
+
+<h1>Список послуг</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Додати послугу</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Назва</th>
+        <th>Ціна</th>
+        <th>Тривалість (хв)</th>
+        <th>Опис</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.ServiceList)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Price</td>
+            <td>@item.EstimatedDuration</td>
+            <td>@item.Description</td>
+            <td>
+                <a asp-page="Edit" asp-route-id="@item.ServiceId">Edit</a> |
+                <a asp-page="Details" asp-route-id="@item.ServiceId">Details</a> |
+                <a asp-page="Delete" asp-route-id="@item.ServiceId">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

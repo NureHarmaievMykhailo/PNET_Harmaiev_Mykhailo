@@ -1,0 +1,31 @@
+@page "{id:int}"
+@model AutoWorkshopWeb.Pages.Orders.EditModel
+
+<h1>Редагувати замовлення</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="Order.OrderId" />
+
+    <div class="form-group">
+        <label asp-for="Order.CarId"></label>
+        <select asp-for="Order.CarId" class="form-control" asp-items="Model.Cars"></select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Order.ServiceId"></label>
+        <select asp-for="Order.ServiceId" class="form-control" asp-items="Model.Services"></select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Order.Quantity"></label>
+        <input asp-for="Order.Quantity" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Order.Status"></label>
+        <select asp-for="Order.Status" class="form-control" asp-items="Model.Statuses"></select>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Зберегти</button>
+    <a asp-page="Index" class="btn btn-secondary mt-2">Назад</a>
+</form>

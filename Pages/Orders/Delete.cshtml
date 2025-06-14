@@ -1,0 +1,12 @@
+@page "{id:int}"
+@model AutoWorkshopWeb.Pages.Orders.DeleteModel
+
+<h1>Підтвердження видалення</h1>
+
+<h4>Ви дійсно хочете видалити замовлення з авто "@Model.Order?.Car?.LicensePlate"?</h4>
+
+<form method="post">
+    <input type="hidden" asp-for="Order.OrderId" />
+    <button type="submit" class="btn btn-danger">Видалити</button>
+    <a asp-page="Index" class="btn btn-secondary">Скасувати</a>
+</form>

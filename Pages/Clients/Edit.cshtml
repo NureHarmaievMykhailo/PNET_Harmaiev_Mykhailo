@@ -1,0 +1,33 @@
+@page "{id:int}"
+@model AutoWorkshopWeb.Pages.Clients.EditModel
+
+<h1>Редагувати клієнта</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="Client.ClientId" />
+    
+    <div class="form-group">
+        <label asp-for="Client.FullName"></label>
+        <input asp-for="Client.FullName" class="form-control"/>
+        <span asp-validation-for="Client.FullName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Client.Phone"></label>
+        <input asp-for="Client.Phone" class="form-control"/>
+        <span asp-validation-for="Client.Phone" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Client.Email"></label>
+        <input asp-for="Client.Email" class="form-control"/>
+        <span asp-validation-for="Client.Email" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Зберегти</button>
+    <a asp-page="Index" class="btn btn-secondary mt-2">Назад</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

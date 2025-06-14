@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoWorkshopWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9ac4ca4e6e3664a7594ca9a7a53927e3c617390")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c91c141e536b9380d099f80e007bb9182cf16b83")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoWorkshopWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoWorkshopWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

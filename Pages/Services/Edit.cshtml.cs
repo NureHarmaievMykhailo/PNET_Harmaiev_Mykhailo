@@ -3,6 +3,8 @@ using AutoWorkshopWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Logging;
 
 namespace AutoWorkshopWeb.Pages.Services;
 
@@ -10,11 +12,13 @@ public class EditModel : PageModel
 {
     private readonly WorkshopContext _context;
     private readonly ILogger<EditModel> _logger;
+    private readonly IMemoryCache _cache;
 
-    public EditModel(WorkshopContext context, ILogger<EditModel> logger)
+    public EditModel(WorkshopContext context, ILogger<EditModel> logger, IMemoryCache cache)
     {
         _context = context;
         _logger = logger;
+        _cache = cache;
     }
 
     [BindProperty]
@@ -39,6 +43,7 @@ public class EditModel : PageModel
         {
             await _context.SaveChangesAsync();
 
+            // Додати запис у таблицю логів
             var log = new ServiceLog
             {
                 ServiceId = Service.ServiceId,
@@ -48,6 +53,8 @@ public class EditModel : PageModel
             };
             _context.ServiceLogs.Add(log);
             await _context.SaveChangesAsync();
+
+            _cache.Remove("services_list");
 
             _logger.LogInformation("[Service Edit] Послуга {ServiceId} оновлена.", Service.ServiceId);
         }

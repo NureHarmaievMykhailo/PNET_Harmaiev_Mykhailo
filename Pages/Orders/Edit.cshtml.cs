@@ -56,9 +56,17 @@ public class EditModel : PageModel
             return Page();
         }
 
+        // 🔍 Отримаємо замовлення з БД, щоб зберегти дату
+        var existingOrder = await _context.Orders.AsNoTracking().FirstOrDefaultAsync(o => o.OrderId == Order.OrderId);
+        if (existingOrder == null)
+            return NotFound();
+
+        // ❗ Зберігаємо дату створення
+        Order.OrderDate = existingOrder.OrderDate;
+
         _context.Attach(Order).State = EntityState.Modified;
 
-        // 👇 Додати логування у таблицю
+        // 👉 Запис логів
         _context.ServiceLogs.Add(new ServiceLog
         {
             ServiceId = Order.ServiceId,

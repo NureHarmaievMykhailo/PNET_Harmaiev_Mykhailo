@@ -27,7 +27,7 @@
             <td>@o.Car?.Client?.FullName</td>
             <td>@o.Service?.Name</td>
             <td>@o.Quantity</td>
-            <td>@o.OrderDate.ToShortDateString()</td>
+            <td>@o.OrderDate.ToString("dd.MM.yyyy HH:mm")</td>
             <td>@o.Status</td>
             <td>
                 <a asp-page="Edit" asp-route-id="@o.OrderId">Edit</a> |

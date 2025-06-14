@@ -41,10 +41,9 @@ public class CreateModel : PageModel
             return Page();
         }
 
-        Order.OrderDate = DateTime.Now;
+        Order.OrderDate = DateTime.UtcNow;
         _context.Orders.Add(Order);
 
-        // 👉 Запис у таблицю ServiceLogs
         _context.ServiceLogs.Add(new ServiceLog
         {
             ServiceId = Order.ServiceId,
@@ -55,7 +54,6 @@ public class CreateModel : PageModel
 
         await _context.SaveChangesAsync();
 
-        // 👉 Лог у консоль
         _logger.LogInformation("Створено замовлення ID={OrderId}, Авто ID={CarId}, Послуга ID={ServiceId}, Статус: {Status}",
             Order.OrderId, Order.CarId, Order.ServiceId, Order.Status);
 

@@ -3,6 +3,7 @@ using AutoWorkshopWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace AutoWorkshopWeb.Pages.Services;
 
@@ -10,11 +11,13 @@ public class DeleteModel : PageModel
 {
     private readonly WorkshopContext _context;
     private readonly ILogger<DeleteModel> _logger;
+    private readonly IMemoryCache _cache;
 
-    public DeleteModel(WorkshopContext context, ILogger<DeleteModel> logger)
+    public DeleteModel(WorkshopContext context, ILogger<DeleteModel> logger, IMemoryCache cache)
     {
         _context = context;
         _logger = logger;
+        _cache = cache;
     }
 
     [BindProperty]
@@ -45,10 +48,13 @@ public class DeleteModel : PageModel
             {
                 ServiceId = service.ServiceId,
                 OperationType = "Delete",
-                Message = $"Видалено послугу: {service.Name}"
+                Message = $"Видалено послугу: {service.Name}",
+                LogDate = DateTime.Now
             });
 
             await _context.SaveChangesAsync();
+
+            _cache.Remove("services_list");
 
             _logger.LogWarning("Послугу видалено: {Name} (ID: {Id})", service.Name, service.ServiceId);
         }
